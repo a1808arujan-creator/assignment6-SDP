@@ -333,10 +333,3 @@ The Context itself contains no if/switch for choosing strategy types.
 | SimulatedDemandDataSource | Supplies simulated demand information |
 
 
-## Refactoring History
-
-Before Strategy:
-https://github.com/a1808arujan-creator/assignment4-SDP/commit/4bb021cabf8a252bbaec4ea4eebfafc3d280b2e0
-
-After Strategy:
-https://github.com/a1808arujan-creator/assignment4-SDP/commit/a5a67207803cc743098eb3186d96e1dc4bdc432f

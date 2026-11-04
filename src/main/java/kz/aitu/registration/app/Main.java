@@ -13,6 +13,7 @@ import kz.aitu.registration.strategy.section.*;
 import kz.aitu.registration.strategy.section.data.SimulatedDemandDataSource;
 import java.util.Scanner;
 
+
 public class Main {
 
     public static void main(String[] args) {
@@ -387,6 +388,21 @@ public class Main {
                             waitingMinutes
                     )
     );
+
+      RegistrationPriorityStrategy limitedStrategy =
+        new LimitedPriorityStrategy(
+                new SeniorStudentPriorityStrategy(),
+                400
+        );
+
+System.out.println(
+        "Limited strategy result: "
+                + limitedStrategy.calculatePriority(
+                        studyYear,
+                        gpa,
+                        waitingMinutes
+                )
+        );
 }
 
 private static void sectionStrategyDemo() {
@@ -493,5 +509,7 @@ private static void sectionStrategyDemo() {
                             preferredTime
                     )
     );
+
+
 }
 }

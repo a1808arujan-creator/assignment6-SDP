@@ -16,3 +16,5 @@ public class FakeDemandDataSource
         return demand;
     }
 }
+
+//сдп 6 ассаймент
